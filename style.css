@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* COMMON STYLES */
+.title-blue {
+  text-transform: uppercase;
+  font-size: 41px;
+  line-height: 50px;
+  font-weight: bold;
+  margin: 0px 0px 15px 50px;
+}
+
+.title-white {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #3C7DD9;
+  margin-left: 56px;
+}
+
+.blue-zone {
+  max-width: 458px;
+  width: 100%;
+  height: 1615px;
+  color: #fff;
+  background-color: #3C7DD9;
+}
+
+/* PHOTO */
+.photo-block {
+  overflow: auto;
+}
+
+.photo-block__container {
+  text-align: center;
+  margin: 70px 0;
+}
+
+.photo-block__picture {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+}
+
+/* CONTACTS */
+
+.contacts-list {
+  list-style: none;
+  margin: 0px 0px 35px 110px;  
+}
+
+.contacts-list__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20.31px;
+  transition: .3s;
+}
+
+.contacts-list__item {
+  line-height: 40px;
+  position: relative;
+  margin: 7px 0px;
+}
+
+.contacts-list__link:hover {
+  color: rgb(255, 221, 176);
+}
+
+.gmail::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -60px;
+  background-image: url("assets/icons/contacts/gmail.png");
+  background-size: cover;
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -60px;
+  background: url("assets/icons/contacts/phone.png");
+  background-size: cover;
+}
+
+.github::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -60px;
+  background-image: url("assets/icons/contacts/github.png");
+  background-size: cover;
+}
+
+.linkedin::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -60px;
+  background-image: url("assets/icons/contacts/linkedin.png");
+  background-size: cover;
+}
+
+.discord::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -60px;
+  background-image: url("assets/icons/contacts/discord.png");
+  background-size: cover;
+}
+
+/* SKILLS */
+.skills {
+  margin-bottom: 35px;
+}
+
+.skills-list__item {
+  line-height: 40px;
+  font-size: 20.31px;
+  margin: 7px 0;
+}
+
+.html,
+.css,
+.js,
+.python,
+.git,
+.editors {
+    position: relative;
+    margin-left: 110px;
+    transition: .3s;
+}
+
+.scss,
+.webpack,
+.flask {
+  position: relative;
+  margin-left: 65px;
+}
+
+.css,
+.scss,
+.js,
+.webpack,
+.python,
+.flask {
+    display: inline;
+}
+
+.html::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/html.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.css::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/css.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.scss::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/scss.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.js::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/js.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.webpack::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/webpack.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.python::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/python.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flask::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/flask.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.git::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/git.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.editors::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -58px;
+  background: url("assets/icons/skills/editors.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* LANGS */
+.langs-list {
+  list-style: none;
+  margin-left: 100px;
+}
+
+.langs-list__item {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 7px 0;
+  position: relative;
+}
+
+.langs-list__item:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: -50px;
+  background: url("assets/icons/langs/check1.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.white-zone {
+  max-width: 742px;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+
+/* NAME-BLOCK */
+.name-block {
+  text-transform: uppercase;
+}
+
+.name-block__name {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 74px;
+  letter-spacing: 0em;
+  margin: 70px 0px 19px 56px;
+}
+
+.name-block__position {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+  margin: 0 0 75px 56px;
+}
+
+
+/* ABOUT */
+.about {
+  margin-bottom: 35px;
+}
+
+.about__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  margin: 15px 0px 15px 56px;
+  text-align: justify;
+}
+
+
+
+.education {
+  margin-bottom: 35px;
+}
+
+.education-list {
+  list-style: none;
+  margin: 15px 0px 15px 105px;
+}
+
+.education-list__item {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  margin: 7px 0;
+}
+
+.education-list__item::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: -50px;
+  background: url("assets/icons/education/check2.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+/* PROJECTS */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0px 15px 56px;
+  gap: 20px;
+}
+
+.project__title {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin-top: 5px;
+}
+
+.project__link {
+  width: 325px;
+  height: 174px;
+}
+
+.project__instance {
+  width: 325px;
+  height: 226px;
+}
+
+
+.project__img {
+  width: 325px;
+  height: 174px;
+}
