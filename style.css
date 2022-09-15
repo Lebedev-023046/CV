@@ -11,36 +11,44 @@
 
 .wrapper {
   display: flex;
+  justify-content: center;
   max-width: 1200px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
+.edu-link {
+  color: #0d3c7d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* COMMON STYLES */
 .title-blue {
   text-transform: uppercase;
-  font-size: 41px;
-  line-height: 50px;
+  /* font-size: px; */
+  line-height: 32px;
   font-weight: bold;
   margin: 0px 0px 15px 50px;
 }
 
 .title-white {
   text-transform: uppercase;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: bold;
-  color: #3C7DD9;
+  color: #0d3c7d;
   margin-left: 56px;
 }
 
 .blue-zone {
-  max-width: 458px;
+  max-width: 35%;
   width: 100%;
-  height: 1640px;
+  height: 1620px;
   color: #fff;
-  background-color: #3C7DD9;
+  /* background-color: #3C7DD9; */
+  background-color: #0d3c7d;
 }
 
 /* PHOTO */
@@ -50,13 +58,14 @@
 
 .photo-block__container {
   text-align: center;
-  margin: 70px 0;
+  margin: 20px 0;
 }
 
 .photo-block__picture {
-  width: 330px;
-  height: 330px;
+  width: 290px;
+  height: 290px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* CONTACTS */
@@ -69,12 +78,12 @@
 .contacts-list__link {
   text-decoration: none;
   color: #fff;
-  font-size: 20.31px;
+  font-size: 16px;
   transition: .3s;
 }
 
 .contacts-list__item {
-  line-height: 40px;
+  line-height: 30px;
   position: relative;
   margin: 7px 0px;
 }
@@ -83,52 +92,39 @@
   color: rgb(255, 221, 176);
 }
 
-.gmail::before {
+.gmail::before,
+.phone::before,
+.github::before, 
+.linkedin::before,
+.discord::before {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   left: -60px;
+}
+
+.gmail::before {
   background-image: url("assets/icons/contacts/gmail.png");
   background-size: cover;
 }
 
 .phone::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -60px;
   background: url("assets/icons/contacts/phone.png");
   background-size: cover;
 }
 
 .github::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -60px;
   background-image: url("assets/icons/contacts/github.png");
   background-size: cover;
 }
 
 .linkedin::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -60px;
   background-image: url("assets/icons/contacts/linkedin.png");
   background-size: cover;
 }
 
 .discord::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -60px;
   background-image: url("assets/icons/contacts/discord.png");
   background-size: cover;
 }
@@ -144,7 +140,7 @@
 
 .skills-list__item {
   line-height: 40px;
-  font-size: 20.31px;
+  font-size: 16px;
   margin: 7px 0;
 }
 
@@ -153,15 +149,17 @@
 .js,
 .python,
 .git,
-.editors {
+.editors,
+.react {
     position: relative;
-    margin-left: 110px;
+    margin-left: 100px;
     transition: .3s;
 }
 
 .scss,
 .webpack,
-.flask {
+.flask,
+.ts {
   position: relative;
   margin-left: 65px;
 }
@@ -171,105 +169,94 @@
 .js,
 .webpack,
 .python,
-.flask {
+.flask,
+.react,
+.ts {
     display: inline;
 }
 
-.html::before {
+.html::before,
+.css::before,
+.scss::before,
+.js::before,
+.webpack::before,
+.python::before,
+.flask::before,
+.git::before,
+.editors::before,
+.react::before,
+.ts::before
+ {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
+  width: 30px;
+  height: 30px;
+  left: -48px;
+  margin-top: 5px;
+}
+
+.html::before {
   background: url("assets/icons/skills/html.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .css::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
   background: url("assets/icons/skills/css.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .scss::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
   background: url("assets/icons/skills/scss.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .js::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
   background: url("assets/icons/skills/js.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .webpack::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
   background: url("assets/icons/skills/webpack.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .python::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
   background: url("assets/icons/skills/python.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .flask::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
   background: url("assets/icons/skills/flask.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .git::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
   background: url("assets/icons/skills/git.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .editors::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: -58px;
   background: url("assets/icons/skills/editors.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.react::before {
+  background: url("assets/icons/skills/react.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.ts::before {
+  background: url("assets/icons/skills/ts.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
@@ -301,7 +288,7 @@
 .white-zone {
   max-width: 742px;
   width: 100%;
-  height: 100%;
+  height: 1620px;
   color: #000;
   background-color: #fff;
 }
@@ -312,19 +299,19 @@
 }
 
 .name-block__name {
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 74px;
+  line-height: 50px;
   letter-spacing: 0em;
-  margin: 70px 0px 19px 56px;
+  margin: 20px 0px 0 56px;
 }
 
 .name-block__position {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 37px;
   letter-spacing: 0em;
-  margin: 0 0 75px 56px;
+  margin: 0 0 35px 56px;
 }
 
 
@@ -334,11 +321,11 @@
 }
 
 .about__text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 20px;
   letter-spacing: 0em;
-  margin: 15px 80px 15px 56px;
+  margin: 15px 25px 15px 50px;
   text-align: justify;
 }
 
@@ -348,14 +335,14 @@
 
 .education-list {
   list-style: none;
-  margin: 15px 0px 15px 105px;
+  margin: 15px 0px 15px 90px;
 }
 
 .education-list__item {
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 25px;
+  /* line-height: 22px; */
   letter-spacing: 0em;
   margin: 7px 0;
 }
@@ -363,16 +350,22 @@
 .education-list__item::before {
   content: "";
   position: absolute;
-  width: 26px;
-  height: 26px;
-  left: -50px;
+  width: 22px;
+  height: 22px;
+  left: -35px;
   background: url("assets/icons/education/check2.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-
 /* PROJECTS */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -382,26 +375,41 @@
 
 .project__title {
   text-transform: capitalize;
-  text-align: center;
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 28px;
   letter-spacing: 0em;
   margin-top: 5px;
 }
 
 .project__link {
-  width: 300px;
-  height: 174px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .project__instance {
-  width: 300px;
-  height: 226px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem;
 }
 
+.project__description {
+  display: flex;
+  flex-direction: column;
+  padding-right: 80px;
+  row-gap: .5rem;
+}
 
-.project__img {
-  width: 300px;
-  height: 174px;
+.project__stack {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.stack-weight {
+  font-weight: 600;
+}
+
+.project__link-list {
+  padding-left: 30px;
 }
