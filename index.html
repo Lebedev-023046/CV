@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>CV</title>
 </head>
@@ -14,14 +14,23 @@
   <div class="wrapper">
     <section class="blue-zone">
 
-      <article class="photo-block">
+      <section class="photo-block">
         <p class="photo-block__container">
           <img class="photo-block__picture" src="assets/img/picture.jpg" alt="picture">
         </p>
-      </article>
+      </section>
 
-
-      <article class="contacts">
+      <section class="about">
+        <h2 class="about__title title-blue">about me</h2>
+        <p class="about__text">
+          My main goal is to find a job at a cool and innovative company with interesting projects.
+          Main priority is personal development as a software developer. 
+          I get excited about the possibility to make large-scale useful services out of empty project files. 
+          And working under the guidance of experienced programmers will accelerate the learning process and 
+          give additional opportunities for personal development. 
+        </p>
+      </section>
+      <section class="contacts">
         <h2 class="contacts__title title-blue">my contacts</h2>
         <ul class="contacts-list">
           <li class="contacts-list__item gmail"><a href="lebedev.023046@gmail.com" class="contacts-list__link">lebedev.023046@gmail.com</a></li>
@@ -30,103 +39,148 @@
           <li class="contacts-list__item linkedin"><a href="https://www.linkedin.com/in/dmitry-lebedev-023046/" class="contacts-list__link">LinkedIn: Dmitry Lebedev</a></li>
           <li class="contacts-list__item discord"><a href="##" class="contacts-list__link">Discord: Lebedev-023046#9826</a></li>
         </ul>
-      </article>
-      <article class="skills">
+      </section>
+      <section class="skills">
         <h2 class="skills__title title-blue">skills</h2>
         <ul class="skills-list">
           <li class="skills-list__item"><p class="html">HTML</p></li>
           <li class="skills-list__item"><p class="css">CSS</p>, <p class="scss">SCSS</p></li>
           <li class="skills-list__item"><p class="js">Java Script</p>, <p class="webpack">Webpack</p></li>
           <li class="skills-list__item"><p class="python">Python</p>, <p class="flask">Flask</p></li>
+          <li class="skills-list__item"><p class="react">React</p>, <p class="ts">Type Script</p></li>
           <li class="skills-list__item"><p class="git">Git</p></li>
           <li class="skills-list__item"><p class="editors">Editors: VS Code</p></li>
         </ul>
-      </article>
-      <article class="languages">
+      </section>
+      <section class="languages">
         <h2 class="langs__title title-blue">languages</h2>
         <ul class="langs-list">
           <li class="langs-list__item">Russian - Native</li>
           <li class="langs-list__item">Belarussian - Native</li>
           <li class="langs-list__item">English - Upper Intermediate</li>
         </ul>
-      </article>
+      </section>
     </section>
     <section class="white-zone">
       <article class="name-block">
         <h1 class="name-block__name">dmitry lebedev</h1>
-        <h2 class="name-block__position">junior frontend developer</h2>
+        <h2 class="name-block__position">frontend developer</h2>
       </article>
-      <article class="about">
-        <h2 class="about__title title-white">about me</h2>
-        <p class="about__text">
-          My main goal is to find a job at a cool and innovative company with interesting projects.
-          Main priority is personal development as a software developer. 
-          I get excited about the possibility to make large-scale useful services out of empty project files. 
-          And working under the guidance of experienced programmers will accelerate the learning process and 
-          give additional opportunities for personal development. 
-        </p>
-      </article>
-      <article class="education">
+      <section class="education">
         <h2 class="education__title title-white">education and courses</h2>
         <ul class="education-list">
           <li class="education-list__item">Belarussian State University, 2020-2024</li>
           <li class="education-list__item">Fundamentals of Computer Science (it-academy)</li>
           <li class="education-list__item">The basics of HTML and CSS(it-academy)</li>
-          <li class="education-list__item">Comprehensive course in developing web applications with Python(it-academy)</li>
-          <li class="education-list__item">Rolling Scopes School RS2022Q1 Stage#0</li>
+          <li class="education-list__item">Comprehensive course in developing web applications with Python<br>(it-academy)
+            <a class="edu-link" target="_blank" href="https://drive.google.com/file/d/1VRHqBsXjYkv6l6S9PXHV5xtvzbqwWutz/view?usp=sharing">(Certificate)</a>
+          </li>
+          <li class="education-list__item">Rolling Scopes School RS2022Q1 Stage#0
+            <a class="edu-link" target="_blank" href="https://drive.google.com/file/d/1dewAOpXsQN13g39K697zpYu_VTANohkp/view?usp=sharing">(Certificate)</a>
+          </li>
           <li class="education-list__item">Rolling Scopes School RS2022Q1 Stage#1</li>
+          <li class="education-list__item">Rolling Scopes School RS2022Q1 Stage#2</li>
       </ul>
-      </article>
-      <article class="projects">
+      </section>
+      <section class="projects">
         <h2 class="projects__title title-white">projects</h2>
         <div class="project-list">
           <div class="portfolio">
             <div class="project__instance">
-              <a href="https://rolling-scopes-school.github.io/lebedev-023046-JSFEPRESCHOOL/portfolio/" class="project__link">
-                <img class="project__img" src="assets/img/projects/portfolio.jpg" alt="portfolio" class="project__picture">
-              </a>
-              <h3 class="project__title">portfolio</h3>
+              <article class="project__description">
+                <h3 class="project__title">RS Lang</h3>
+                <p class="project__stack">
+                  RS Lang is a free service for learning English. 
+                  It was developed in a team where I set up a backend, made word cards, 
+                  built a modal window and a form for registration. 
+                  Worked on a textbook and a dictionary.
+                  <br>Stack used in the project: <span class="stack-weight">HTML, CSS, React, Material-ui, ESLint & Pettier</span>.
+                </p>
+                <ul class="project__link-list">
+                  <li><a class="project__link" href="https://github.com/Lebedev-023046/rslang">View project on GitHub</a></li>
+                  <li><a class="project__link" href="https://lebedev-023046-rslang.netlify.app/">View project deploy</a></li>
+                </ul>
+              </article>
             </div>
-          </div>
-          <div class="shelter">
             <div class="project__instance">
-              <a href="https://rolling-scopes-school.github.io/lebedev-023046-JSFE2022Q1/shelter/" class="project__link">
-                <img class="project__img" src="assets/img/projects/shelter.png" alt="shelter" class="project__picture">
-              </a>
-              <h3 class="project__title">shelter</h3>
+              <article class="project__description">
+                <h3 class="project__title">Async race</h3>
+                <p class="project__stack"> 
+                  An application that implements race functionality. There is a race page and a results page. Implemented CRUD operations to change the car.
+                  <br>Stack used in the project: <span class="stack-weight">HTML, SASS (7-1 pattern), TypeScript, Webpack, ESLint & Pettier</span>.
+                </p>
+                <ul class="project__link-list">
+                  <li><a class="project__link" href="https://github.com/Lebedev-023046/projects/tree/async-race">View project on GitHub</a></li>
+                  <li><a class="project__link" href="https://lebedev-023046.github.io/projects/async-race/">View project deploy (to access the deploy you need to install and start this server: 
+                    <a href="https://github.com/mikhama/async-race-api" class="project__link">Server</a>)</a>
+                  </li>
+                </ul>
+              </article>
             </div>
-          </div>
-          <div class="image-galery">
             <div class="project__instance">
-              <a href="https://rolling-scopes-school.github.io/lebedev-023046-JSFEPRESCHOOL/image-galery/" class="project__link">
-                <img class="project__img" src="assets/img/projects/imagegalery.jpg" alt="image-galery" class="project__picture">
-              </a>
-              <h3 class="project__title">image galery</h3>
+              <article class="project__description">
+                <h3 class="project__title">Online Store</h3>
+                <p class="project__stack"> 
+                  Similar to an online store with one or more filters and a partial implementation of a shopping cart.
+                  <br>Stack used in the project: <span class="stack-weight">HTML, SASS (7-1 pattern), TypeScript, Webpack, ESLint & Pettier</span>.
+                </p>
+                <ul class="project__link-list">
+                  <li><a class="project__link" href="https://github.com/Lebedev-023046/projects/tree/Online-Store">View project on GitHub</a></li>
+                  <li><a class="project__link" href="https://lebedev-023046.github.io/projects/Online-Store/">View project deploy</a></li>
+                </ul>
+              </article>
             </div>
-            
-          </div>
-          <div class="audio-player">
             <div class="project__instance">
-              <a href="https://rolling-scopes-school.github.io/lebedev-023046-JSFEPRESCHOOL/audio-player/" class="project__link">
-                <img class="project__img" src="assets/img/projects/audioplayer.jpg" alt="audio-player" class="project__picture">
-              </a>
-              <h3 class="project__title">audio-player</h3>
+              <article class="project__description">
+                <h3 class="project__title">Shelter</h3>
+                <p class="project__stack"> 
+                  Two-page site with implementation of pagination, pop-ups and slider in vanilla JS.
+                  <br>Stack used in the project: <span class="stack-weight">HTML, SASS, Java Script</span>.
+                </p>
+                <ul class="project__link-list">
+                  <li><a class="project__link" href="https://lebedev-023046.github.io/projects/shelter/">View project on GitHub</a></li>
+                  <li><a class="project__link" href="https://rolling-scopes-school.github.io/lebedev-023046-JSFE2022Q1/shelter/">View project deploy</a></li>
+                </ul>
+              </article>
             </div>
-          </div>
-          <div class="snake">
             <div class="project__instance">
-              <a href="https://rolling-scopes-school.github.io/lebedev-023046-JSFEPRESCHOOL/snake-game/" class="project__link">
-                <img class="project__img" src="assets/img/projects/snakegame.jpg" alt="snakegsme" class="project__picture">
-              </a>
-              <h3 class="project__title">snake</h3>
+              <article class="project__description">
+                <h3 class="project__title">Image Galery</h3>
+                <p class="project__stack"> 
+                  Image Galery with ability to write theme of pictures.
+                  <br>Stack used in the project: <span class="stack-weight">HTML, CSS, Java Script</span>.
+                </p>
+                <ul class="project__link-list">
+                  <li><a class="project__link" href="https://github.com/Lebedev-023046/projects-stage-0/tree/image-galery">View project on GitHub</a></li>
+                  <li><a class="project__link" href="https://lebedev-023046.github.io/projects-stage-0/image-galery/">View project deploy</a></li>
+                </ul>
+              </article>
             </div>
-          </div>
-          <div class="Q&A">
             <div class="project__instance">
-              <a href="http://peaceful-lake-38769.herokuapp.com/" class="project__link">
-                <img class="project__img" src="assets/img/projects/ans&quest.jpg" alt="ansqers and questions" class="project__picture">
-              </a>
-              <h3 class="project__title">Q&A</h3>
+              <article class="project__description">
+                <h3 class="project__title">Portfolio</h3>
+                <p class="project__stack"> 
+                  Lending of portfolio. Implemented ability to choose white or dark theme and the language of the page.  
+                  <br>Stack used in the project: <span class="stack-weight">HTML, CSS, Java Script</span>.
+                </p>
+                <ul class="project__link-list">
+                  <li><a class="project__link" href="https://github.com/Lebedev-023046/projects-stage-0/tree/portfolio">View project on GitHub</a></li>
+                  <li><a class="project__link" href="https://lebedev-023046.github.io/projects-stage-0/portfolio/">View project deploy</a></li>
+                </ul>
+              </article>
+            </div>
+            <div class="project__instance">
+              <article class="project__description">
+                <h3 class="project__title">Question and Answer app</h3>
+                <p class="project__stack">
+                  The app which allow users to ask questions. User can be register as expert or simple user.   
+                  <br>Stack used in the project: <span class="stack-weight">Python, Flask, HTML, CSS</span>.
+                </p>
+                <ul class="project__link-list">
+                  <li><a class="project__link" href="https://github.com/Lebedev-023046/question-answer-app-flask">View project on GitHub</a></li>
+                  <li><a class="project__link" href="http://peaceful-lake-38769.herokuapp.com/">View project deploy</a></li>
+                </ul>
+              </article>
             </div>
           </div>
         </div>
