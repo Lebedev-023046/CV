@@ -45,7 +45,7 @@
 .blue-zone {
   max-width: 35%;
   width: 100%;
-  height: 1550px;
+  height: 1515px;
   color: #fff;
   /* background-color: #3C7DD9; */
   background-color: #0d3c7d;
@@ -288,7 +288,7 @@
 .white-zone {
   max-width: 742px;
   width: 100%;
-  height: 1550px;
+  height: 1515px;
   color: #000;
   background-color: #fff;
 }
@@ -363,7 +363,7 @@
 .portfolio {
   display: flex;
   flex-direction: column;
-  row-gap: 1.2rem;
+  row-gap: .7rem;
 }
 
 .project-list {
